@@ -16,8 +16,8 @@ Adafruit_NeoPixel LED = Adafruit_NeoPixel(PIXEL_COUNT, LEDPin, NEO_GRBW + NEO_KH
 typedef enum eState{
   BLUE,   //DISCONNECTED / NO ONE HERE
   GREEN,  //AVAILABLE
-  ORANGE, //AWAY / ON CALL
-  RED     //OCCUPIED
+  ORANGE, //ON CALL
+  RED     //OCCUPIED / AWAY
 };
 volatile eState state=BLUE;
 eState oldState=BLUE;
@@ -32,7 +32,7 @@ typedef enum eCheck{
 volatile eCheck checkConnection=NOTHING;
 bool isConnected=false;
 //connection check frequency in seconds
-#define connectionFreq 30
+#define connectionFreq 10
 int lastCheck=0;
 
 //Used to receive serial messages
@@ -49,7 +49,7 @@ void setup() {
   LED.begin();
   setColor();//The default color is the BLUE for "nothing connected".
 
-
+//setup timer interrupt
   cli();//stop interrupts
   
   //set timer1 interrupt at 1Hz
@@ -85,8 +85,11 @@ void loop() {
   }
   //message parsing
   if(message!=""){
+    //remove endline chars
+    message.trim();
+    
     if(message=="PING")
-      sendSerial("PONG");
+      sendSerial("PING");
     else if(message=="PONG"){
       isConnected=true;
       lastCheck=0;
@@ -131,13 +134,13 @@ void setColor(){
   uint32_t color;
   switch(state){
     case BLUE:
-      //color=LED.Color(0,0,255,0);
-      color=LED.Color(255,17,35,0);//THIS IS CHZ PINK!!
+      color=LED.Color(0,0,255,0);
+      //color=LED.Color(255,17,35,0);//THIS IS CHZ PINK!!
       sendSerial("BLUE");
       break;
     case GREEN:
-      //color=LED.Color(0,255,0,0);
-      color=LED.Color(0,200,255,0);//THIS IS KAREN TURQUOISE
+      color=LED.Color(0,255,0,0);
+      //color=LED.Color(0,200,255,0);//THIS IS KAREN TURQUOISE
       sendSerial("GREEN");
       break;
     case ORANGE:

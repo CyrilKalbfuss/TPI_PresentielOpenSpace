@@ -1,0 +1,19 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:presentiel"
+        xmlns:controls="clr-namespace:Microsoft.Lync.Controls;assembly=Microsoft.Lync.Controls" x:Class="presentiel.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="157.344" Width="241.754">
+    <Grid>
+        <controls:MyStatusArea HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CmbAppPresence" HorizontalAlignment="Left" Margin="79,58,0,0" VerticalAlignment="Top" Width="103" Height="25" Background="White" BorderBrush="White" Foreground="Black" SelectionChanged="AppPresence_SelectionChanged"/>
+        <TextBlock x:Name="lblSkypeDisconnected" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Skype n'est pas connecté." VerticalAlignment="Top" Width="172" Background="White" Foreground="#FFDA0000" Height="25"/>
+        <TextBlock x:Name="lblNoConnection" HorizontalAlignment="Left" Margin="10,101,0,0" TextWrapping="Wrap" Text="Le boitier n'est pas connecté." VerticalAlignment="Top" Foreground="#FFDA0000"/>
+        <Rectangle x:Name="ColorAppPresence" Fill="Blue" HorizontalAlignment="Left" Height="50" Margin="11,40,0,0" VerticalAlignment="Top" Width="9"/>
+
+
+    </Grid>
+</Window>
