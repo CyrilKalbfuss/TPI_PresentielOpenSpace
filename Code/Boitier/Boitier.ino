@@ -87,7 +87,6 @@ void loop() {
   if(message!=""){
     //remove endline chars
     message.trim();
-    sendSerial(message);
     if(message=="PING")
       sendSerial("PING");
     else if(message=="PONG"){
