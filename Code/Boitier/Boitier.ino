@@ -77,17 +77,17 @@ void loop() {
   //Read incoming Serial message
   if(digitalRead(btStatePin)){
     if(bluetooth.available())
-      message=bluetooth.readString();
+      message=bluetooth.readStringUntil('\n');
   }
   else{
     if(Serial.available())
-      message=Serial.readString();
+      message=Serial.readStringUntil('\n');
   }
   //message parsing
   if(message!=""){
     //remove endline chars
     message.trim();
-    
+    sendSerial(message);
     if(message=="PING")
       sendSerial("PING");
     else if(message=="PONG"){

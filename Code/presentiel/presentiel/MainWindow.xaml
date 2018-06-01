@@ -6,14 +6,23 @@
         xmlns:local="clr-namespace:presentiel"
         xmlns:controls="clr-namespace:Microsoft.Lync.Controls;assembly=Microsoft.Lync.Controls" x:Class="presentiel.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="157.344" Width="241.754">
+        Title="MainWindow" Height="152.794" Width="241.754" Background="White">
+
+    <Window.Resources>
+        <BitmapImage x:Key="USBLogo" UriSource="./resources/usbLogo.png"/>
+        <BitmapImage x:Key="BTLogo" UriSource="./resources/bluetoothLogo.png"/>
+    </Window.Resources>
+
     <Grid>
         <controls:MyStatusArea HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="CmbAppPresence" HorizontalAlignment="Left" Margin="79,58,0,0" VerticalAlignment="Top" Width="103" Height="25" Background="White" BorderBrush="White" Foreground="Black" SelectionChanged="AppPresence_SelectionChanged"/>
         <TextBlock x:Name="lblSkypeDisconnected" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Skype n'est pas connecté." VerticalAlignment="Top" Width="172" Background="White" Foreground="#FFDA0000" Height="25"/>
-        <TextBlock x:Name="lblNoConnection" HorizontalAlignment="Left" Margin="10,101,0,0" TextWrapping="Wrap" Text="Le boitier n'est pas connecté." VerticalAlignment="Top" Foreground="#FFDA0000"/>
+        <TextBlock x:Name="lblNoConnection" HorizontalAlignment="Left" Margin="11,97,0,0" TextWrapping="Wrap" Text="Le boitier n'est pas connecté." VerticalAlignment="Top" Foreground="#FFDA0000"/>
         <Rectangle x:Name="ColorAppPresence" Fill="Blue" HorizontalAlignment="Left" Height="50" Margin="11,40,0,0" VerticalAlignment="Top" Width="9"/>
-
-
+        <Button x:Name="btnComSwitch" Content="" HorizontalAlignment="Left" Margin="189,10,0,0" VerticalAlignment="Top" Width="35" Height="35" Click="btnComSwitch_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="{Binding Mode=OneWay, Source={StaticResource USBLogo}}"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

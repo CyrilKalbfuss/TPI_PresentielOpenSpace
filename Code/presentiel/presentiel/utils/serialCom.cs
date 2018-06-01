@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO.Ports;
 using System.Threading;
 
@@ -8,7 +9,7 @@ namespace presentiel
     {
         //Serial communication thread
         private Thread serialThread;
-        private volatile String send;
+        private volatile List<String> send;
         private bool close;
         private int COMPort;
 
@@ -17,14 +18,14 @@ namespace presentiel
         public serialCom()
         {
             //Serial com thread setup
-            send = "";
+            send = new List<string>();
             COMPort = Properties.Settings.Default.UsbCOM;
             serialThread = new Thread(runSerial);
             serialThread.Start();
         }
 
         //Switch between USB and Bluetooth serial communication
-        public void toggleComMode()
+        public void switchComMode()
         {
             stop();
             if (Properties.Settings.Default.ComMode)//true = bluetooth
@@ -37,7 +38,7 @@ namespace presentiel
 
         public void Send(String message)
         {
-            send = message;
+            send.Add(message);
         }
 
         public void stop()
@@ -63,10 +64,13 @@ namespace presentiel
                     received = serialPort.ReadLine();
 
                 //Send an enventual message
-                if (send != "")
+                if (send.Count>0)
                 {
-                    serialPort.WriteLine(send);
-                    send = "";
+                    foreach(String msg in send)
+                    {
+                        serialPort.WriteLine(msg);
+                    }
+                    send.Clear();
                 }
 
                 //Transfer received message to UI thread via an event

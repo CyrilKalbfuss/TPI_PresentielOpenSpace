@@ -105,5 +105,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="usb-connector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\usbLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\bluetoothLogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
