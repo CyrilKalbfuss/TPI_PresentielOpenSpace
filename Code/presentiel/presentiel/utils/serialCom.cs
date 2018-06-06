@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Threading;
+using System.Windows;
 
 namespace presentiel
 {
@@ -12,16 +13,18 @@ namespace presentiel
         private volatile List<String> send;
         private bool close;
         private int COMPort;
+        public bool connected { get; private set; }//tell if the serial is connected or not
 
         public event EventHandler<DataEventArgs> DataReceived;
+        public event EventHandler<EventArgs> Disconnected;
 
         public serialCom()
         {
             //Serial com thread setup
+            connected = false;
             send = new List<string>();
             COMPort = Properties.Settings.Default.UsbCOM;
-            serialThread = new Thread(runSerial);
-            serialThread.Start();
+            start();
         }
 
         //Switch between USB and Bluetooth serial communication
@@ -32,8 +35,7 @@ namespace presentiel
                 COMPort = Properties.Settings.Default.BluetoothCOM;
             else
                 COMPort = Properties.Settings.Default.UsbCOM;
-            serialThread = new Thread(runSerial);
-            serialThread.Start();
+            start();
         }
 
         public void Send(String message)
@@ -41,6 +43,21 @@ namespace presentiel
             send.Add(message);
         }
 
+        public void start()
+        {
+            if (serialThread != null)
+            {
+                stop();
+                while (serialThread.IsAlive)
+                    Thread.Sleep(10);
+            }
+
+            if (!connected)
+            {
+                serialThread = new Thread(runSerial);
+                serialThread.Start();
+            }
+        }
         public void stop()
         {
             close = true;
@@ -51,7 +68,22 @@ namespace presentiel
             close = false;
 
             SerialPort serialPort = new SerialPort("COM"+COMPort, 9600);
-            serialPort.Open();
+            try
+            {
+                serialPort.Open();
+            }catch
+            {
+                connected = false;
+                close = true;
+
+                //Launch disonnection event
+                Disconnected(this, null);
+
+                return;
+            }
+
+            connected = true;
+
             //Firstly send a PING to initiate both connection state
             serialPort.WriteLine("PING");
 
@@ -68,7 +100,20 @@ namespace presentiel
                 {
                     foreach(String msg in send)
                     {
-                        serialPort.WriteLine(msg);
+                        try
+                        {
+                            serialPort.WriteLine(msg);
+                        }
+                        catch
+                        {
+                            connected = false;
+                            close = true;
+
+                            //Launch disonnection event
+                            Disconnected(this, null);
+
+                            return;
+                        }
                     }
                     send.Clear();
                 }
@@ -81,6 +126,12 @@ namespace presentiel
                     received = "";
                 }
             }
+            try
+            {
+                serialPort.Close();
+            }
+            catch { }
+            connected = false;
         }
     }
 

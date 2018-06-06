@@ -59,15 +59,12 @@ namespace presentiel.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("10")]
         public int PingFreq {
             get {
                 return ((int)(this["PingFreq"]));
-            }
-            set {
-                this["PingFreq"] = value;
             }
         }
     }

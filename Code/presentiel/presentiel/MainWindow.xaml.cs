@@ -48,6 +48,7 @@ namespace presentiel
             //Set up serial communication
             serial = new serialCom();
             serial.DataReceived += ThreadDataReceived;
+            serial.Disconnected += arduinoDisconnected;
 
             lastColorSend = "";
 
@@ -69,6 +70,7 @@ namespace presentiel
             if(!contactInfoChangedSetUpDone)
                 CmbAppPresence.SelectedIndex = 0;
         }
+
 
         //--Skype handling
         private void skypeSetUp()
@@ -203,6 +205,7 @@ namespace presentiel
             self.EndPublishContactInformation(res);
         }
 
+
         //--App handling
         //App presence selector: Selected item changed. Send new color to Arduino.
         private void AppPresence_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -302,26 +305,6 @@ namespace presentiel
             }
         }
 
-        //--Timer event
-        private void dispatcherTimer_Tick(object sender, EventArgs e)
-        {
-            //check connection with arduino
-            switch (connectionCheck)
-            {
-                case eConnectionCheck.PingReceived:
-                    connectionCheck = eConnectionCheck.Wait;
-                    break;
-                case eConnectionCheck.Wait:
-                    connectionCheck = eConnectionCheck.Disconnected;
-                    lblNoConnection.Visibility = Visibility.Visible;
-                    break;
-            }
-
-            //setup skype if not already done
-            if (!skypeSetUpDone)
-                skypeSetUp();
-        }
-
         private void btnComSwitch_Click(object sender, RoutedEventArgs e)
         {
             //switch serialCom and change button's background image
@@ -336,6 +319,72 @@ namespace presentiel
                 btnComSwitch.Background = new ImageBrush((ImageSource)Resources["BTLogo"]);
             }
             serial.switchComMode();
+        }
+
+
+        //--Timer event
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            //check connection with arduino
+            switch (connectionCheck)
+            {
+                case eConnectionCheck.PingReceived:
+                    connectionCheck = eConnectionCheck.Wait;
+                    break;
+                case eConnectionCheck.Wait:
+                    serial.start();//Start connection if not already done
+                    connectionCheck = eConnectionCheck.Disconnected;
+                    lblNoConnection.Visibility = Visibility.Visible;
+                    break;
+                case eConnectionCheck.Disconnected:
+                    serial.start();//Start connection if not already done
+                    break;
+            }
+
+            //setup skype if not already done
+            if (!skypeSetUpDone)
+                skypeSetUp();
+        }
+
+        //--Disconnection event
+        private void arduinoDisconnected(object s, EventArgs e)
+        {
+            this.Dispatcher.Invoke(new EventHandler<EventArgs>(arduinoDisconnectedSync), new object[] { s, e });
+        }
+
+        private void arduinoDisconnectedSync(object s, EventArgs e)
+        {
+            connectionCheck = eConnectionCheck.Disconnected;
+            lblNoConnection.Visibility = Visibility.Visible;
+        }
+
+
+        //--Options
+        //Show options "page"
+        private void btnOptions_Click(object sender, RoutedEventArgs e)
+        {
+            OptionsView.Visibility = Visibility.Visible;
+        }
+
+        //Hide options
+        private void BtnCloseOptions_Click(object sender, RoutedEventArgs e)
+        {
+            OptionsView.Visibility = Visibility.Hidden;
+            serial.stop();//restart serial
+            serial.start();
+        }
+
+
+        //--Connection error page
+        //Show
+        private void lblNoConnection_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            connectionErrorView.Visibility = Visibility.Visible;
+        }
+        //Hide
+        private void btnConnectionError_Click(object sender, RoutedEventArgs e)
+        {
+            connectionErrorView.Visibility = Visibility.Hidden;
         }
     }
 }

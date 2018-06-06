@@ -5,24 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:presentiel"
         xmlns:controls="clr-namespace:Microsoft.Lync.Controls;assembly=Microsoft.Lync.Controls" x:Class="presentiel.MainWindow"
+        xmlns:appSettings="clr-namespace:presentiel.Properties"
         mc:Ignorable="d"
-        Title="MainWindow" Height="152.794" Width="241.754" Background="White">
+        Title="MainWindow" Height="158" Width="263" Background="White">
 
     <Window.Resources>
         <BitmapImage x:Key="USBLogo" UriSource="./resources/usbLogo.png"/>
         <BitmapImage x:Key="BTLogo" UriSource="./resources/bluetoothLogo.png"/>
+        <BitmapImage x:Key="propertiesLogo" UriSource="./resources/propertiesGear.png"/>
     </Window.Resources>
 
-    <Grid>
+    <Grid x:Name="MainView">
         <controls:MyStatusArea HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="CmbAppPresence" HorizontalAlignment="Left" Margin="79,58,0,0" VerticalAlignment="Top" Width="103" Height="25" Background="White" BorderBrush="White" Foreground="Black" SelectionChanged="AppPresence_SelectionChanged"/>
         <TextBlock x:Name="lblSkypeDisconnected" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Skype n'est pas connecté." VerticalAlignment="Top" Width="172" Background="White" Foreground="#FFDA0000" Height="25"/>
-        <TextBlock x:Name="lblNoConnection" HorizontalAlignment="Left" Margin="11,97,0,0" TextWrapping="Wrap" Text="Le boitier n'est pas connecté." VerticalAlignment="Top" Foreground="#FFDA0000"/>
+        <TextBlock x:Name="lblNoConnection" HorizontalAlignment="Left" Margin="11,97,0,0" TextWrapping="Wrap" Text="Le boitier n'est pas connecté." VerticalAlignment="Top" Foreground="#FFDA0000" Cursor="Hand" MouseDown="lblNoConnection_MouseDown"/>
         <Rectangle x:Name="ColorAppPresence" Fill="Blue" HorizontalAlignment="Left" Height="50" Margin="11,40,0,0" VerticalAlignment="Top" Width="9"/>
-        <Button x:Name="btnComSwitch" Content="" HorizontalAlignment="Left" Margin="189,10,0,0" VerticalAlignment="Top" Width="35" Height="35" Click="btnComSwitch_Click">
+        <Button x:Name="btnComSwitch" Content="" HorizontalAlignment="Left" Margin="210,10,0,0" VerticalAlignment="Top" Width="35" Height="35" Click="btnComSwitch_Click">
             <Button.Background>
                 <ImageBrush ImageSource="{Binding Mode=OneWay, Source={StaticResource USBLogo}}"/>
             </Button.Background>
         </Button>
+        <Button x:Name="btnOptions" Content="" HorizontalAlignment="Left" Margin="210,75,0,0" VerticalAlignment="Top" Width="35" Height="35" RenderTransformOrigin="0.485,-1.433" Click="btnOptions_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="{DynamicResource propertiesLogo}"/>
+            </Button.Background>
+        </Button>
+
+        <!--Options window Grid-->
+        <Grid x:Name="OptionsView" Background="White" Visibility="Hidden">
+            <Label Content="Options" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+            <TextBlock x:Name="lblComUsb" HorizontalAlignment="Left" Margin="10,34,0,0" TextWrapping="Wrap" Text="Port COM USB:" VerticalAlignment="Top"/>
+            <TextBox Text="{Binding Source={x:Static appSettings:Settings.Default}, Path=UsbCOM}" HorizontalAlignment="Left" Height="23" Margin="143,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="Port COM Bluetooth:" VerticalAlignment="Top"/>
+            <TextBox Text="{Binding Source={x:Static appSettings:Settings.Default}, Path=BluetoothCOM}" HorizontalAlignment="Left" Height="23" Margin="143,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+            <Button x:Name="BtnCloseOptions" Content="Fermer" HorizontalAlignment="Left" Margin="71,91,0,0" VerticalAlignment="Top" Width="75" Click="BtnCloseOptions_Click"/>
+        </Grid>
+
+        <!--connection error Grid-->
+        <Grid x:Name="connectionErrorView" Background="White" Visibility="Hidden">
+            <Label x:Name="lblConnecionErrorTitle" Content="Erreur de connexion au boitier" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Foreground="#FFDA0000" Background="{x:Null}"/>
+            <Button x:Name="btnConnectionError" Content="Fermer" HorizontalAlignment="Left" Margin="85,92,0,0" VerticalAlignment="Top" Width="75" Click="btnConnectionError_Click"/>
+            <TextBlock x:Name="lblConnecionError1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Vérifiez que le boitier soit fonctionnel." VerticalAlignment="Top" Margin="10,29,0,0" Width="235"/>
+            <TextBlock x:Name="lblConnecionError2" HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="Vérifiez le mode de communication choisi." VerticalAlignment="Top" Width="235"/>
+            <TextBlock x:Name="lblConnecionError3" HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" Text="Vérifiez les options de port COM." VerticalAlignment="Top" Width="235"/>
+        </Grid>
+
     </Grid>
 </Window>
