@@ -289,6 +289,8 @@ namespace presentiel
                             break;
                         case 1:
                         case 5:
+                            if (skypeClient.Self.Contact.GetContactInformation(ContactInformationType.Activity).ToString().StartsWith("En "))
+                                break;//Do not change the availability if in call or conference
                             SkypeUpdateAvailability(ContactAvailability.Busy);
                             break;
                         case 2:
