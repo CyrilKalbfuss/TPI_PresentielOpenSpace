@@ -104,7 +104,6 @@ P:\4eme\TPI\Code\presentiel\presentiel\bin\Debug\uz-latn-uz\Microsoft.Lync.Contr
 P:\4eme\TPI\Code\presentiel\presentiel\bin\Debug\vi-vn\Microsoft.Lync.Controls.Framework.resources.dll
 P:\4eme\TPI\Code\presentiel\presentiel\bin\Debug\zh-cn\Microsoft.Lync.Controls.Framework.resources.dll
 P:\4eme\TPI\Code\presentiel\presentiel\bin\Debug\zh-tw\Microsoft.Lync.Controls.Framework.resources.dll
-P:\4eme\TPI\Code\presentiel\presentiel\obj\Debug\presentiel.csprojResolveAssemblyReference.cache
 P:\4eme\TPI\Code\presentiel\presentiel\obj\Debug\MainWindow.g.cs
 P:\4eme\TPI\Code\presentiel\presentiel\obj\Debug\App.g.cs
 P:\4eme\TPI\Code\presentiel\presentiel\obj\Debug\presentiel_MarkupCompile.cache
@@ -116,3 +115,4 @@ P:\4eme\TPI\Code\presentiel\presentiel\obj\Debug\presentiel.csproj.GenerateResou
 P:\4eme\TPI\Code\presentiel\presentiel\obj\Debug\presentiel.csproj.CoreCompileInputs.cache
 P:\4eme\TPI\Code\presentiel\presentiel\obj\Debug\presentiel.exe
 P:\4eme\TPI\Code\presentiel\presentiel\obj\Debug\presentiel.pdb
+P:\4eme\TPI\Code\presentiel\presentiel\obj\Debug\presentiel.csprojResolveAssemblyReference.cache

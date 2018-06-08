@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Threading;
 
@@ -320,10 +321,13 @@ namespace presentiel
                 Properties.Settings.Default.ComMode = true;
                 btnComSwitch.Background = new ImageBrush((ImageSource)Resources["BTLogo"]);
             }
-            serial.switchComMode();
+            serial.changeCOMPort();
+
+            //remove focus
+            Keyboard.ClearFocus();
         }
 
-
+    
         //--Timer event
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
@@ -372,8 +376,7 @@ namespace presentiel
         private void BtnCloseOptions_Click(object sender, RoutedEventArgs e)
         {
             OptionsView.Visibility = Visibility.Hidden;
-            serial.stop();//restart serial
-            serial.start();
+            serial.changeCOMPort();//Update the used COM port. This method also restart the serial thread.
         }
 
 

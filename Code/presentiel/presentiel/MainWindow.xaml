@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:presentiel"
-        xmlns:controls="clr-namespace:Microsoft.Lync.Controls;assembly=Microsoft.Lync.Controls" x:Class="presentiel.MainWindow"
+        xmlns:controls="clr-namespace:Microsoft.Lync.Controls;assembly=Microsoft.Lync.Controls" x:Name="presentielWindow" x:Class="presentiel.MainWindow"
         xmlns:appSettings="clr-namespace:presentiel.Properties"
         mc:Ignorable="d"
         Title="MainWindow" Height="158" Width="263" Background="White">

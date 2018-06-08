@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Threading;
-using System.Windows;
 
 namespace presentiel
 {
@@ -13,7 +12,7 @@ namespace presentiel
         private volatile List<String> send;
         private bool close;
         private int COMPort;
-        public bool connected { get; private set; }//tell if the serial is connected or not
+        public bool connected { get; private set; }//tells if the serial is connected or not
 
         public event EventHandler<DataEventArgs> DataReceived;
         public event EventHandler<EventArgs> Disconnected;
@@ -28,7 +27,7 @@ namespace presentiel
         }
 
         //Switch between USB and Bluetooth serial communication
-        public void switchComMode()
+        public void changeCOMPort()
         {
             stop();
             if (Properties.Settings.Default.ComMode)//true = bluetooth
