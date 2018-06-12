@@ -1,0 +1,1277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="presentiel.exe" version="1.0.0.0" publicKeyToken="8a96e18ec4d7af93" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="presentiel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="presentiel.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options du manifeste de contrôle de compte d’utilisateur (UAC)
+          Si vous voulez changer le niveau de contrôle de compte d’utilisateur Windows, remplacez le 
+          nœud requestedExecutionLevel par l’un des nœuds suivants.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si vous voulez utiliser la virtualisation de fichiers système et du Registre pour la 
+         compatibilité descendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Lync.Controls.dll" size="645736">
+      <assemblyIdentity name="Microsoft.Lync.Controls" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EFF3523YbKDoGTg9GoiADLHq+tyvyKjyNFMylV0uK0o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Lync.Controls.Framework.dll" size="131792">
+      <assemblyIdentity name="Microsoft.Lync.Controls.Framework" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ez4NNEo9EkuiG83wULOOJlhbrPpYGJWOw3qxmhz10+c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="az-Latn-AZ\Microsoft.Lync.Controls.Framework.resources.dll" size="13512">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="az-Latn-AZ" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AmmubouFKfXurUz7Yi+wF8mZRZVQ3vwC+ADO6YELEu0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="be-BY\Microsoft.Lync.Controls.Framework.resources.dll" size="14504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="be-BY" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cBRBoKs3OAt85QtRUVLogdXVg42PkYlDWqnpH5wb/ws=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bg-BG\Microsoft.Lync.Controls.Framework.resources.dll" size="14504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="bg-BG" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K+rwXW9bRU6zLFWSvz7hr9vIV6mpgn0t9LCRWMyzvwk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ca-ES\Microsoft.Lync.Controls.Framework.resources.dll" size="13512">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ca-ES" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sVtJrI7d5MIba72DylFIYGreCEx+ExypGA2oaewJBiw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="cs-CZ\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="cs-CZ" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UOO9GMt0ZTlR5R84MCngu0zqwRmnptwqWYFGLzydHQQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="da-DK\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="da-DK" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>q/loCEfEBJrf6nun/J9AWdCx/BBy/Crls8bGk3qZZ2w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de-DE\Microsoft.Lync.Controls.Framework.resources.dll" size="14016">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="de-DE" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5jFZXlwmNnriwzWxF8RMnbKXdRUVXTiwhKR+96urJy8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="el-GR\Microsoft.Lync.Controls.Framework.resources.dll" size="15016">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="el-GR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uAnIR9JDhcnmuUC7nt43DKLKApjhbQSVyphgBsnVBBI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-ES\Microsoft.Lync.Controls.Framework.resources.dll" size="13512">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="es-ES" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wTBKPGNSE6387uAkMNqTwpgYWjNI4w9j7GcqPqyHYVA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="et-EE\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="et-EE" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vxg/G9hduw/08fxV0umi0DZymAgT8KF24++ad/8WdHU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="eu-ES\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="eu-ES" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aWYSWvtud9rtqnuxtTFfv3APzTzHx1xTSe3t7e2dw4U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fi-FI\Microsoft.Lync.Controls.Framework.resources.dll" size="13496">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="fi-FI" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mXL258WXbCfxLazBi0b8rfAWantuQWrlHpxdZ1oUBvY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fil-PH\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="fil-PH" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1ddd5YwicCoRJBtVvCO6DMbsYnQKOZK99xtUGD/d290=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr-FR\Microsoft.Lync.Controls.Framework.resources.dll" size="14016">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="fr-FR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TsdGkF3Nwp9vkbFDMbGQRYTS0lBlwiFrKUkbN05RpaE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gl-ES\Microsoft.Lync.Controls.Framework.resources.dll" size="13512">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="gl-ES" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>pkO9wKLnSR6Nf8qkRMfsfALEiCM2wPN4F5Y3FMg+WW8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hi-IN\Microsoft.Lync.Controls.Framework.resources.dll" size="15016">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="hi-IN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BtEqAetDgVygb8rHgELxaIBWpqsA1XqZLtf/eh42iGU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hr-HR\Microsoft.Lync.Controls.Framework.resources.dll" size="14040">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="hr-HR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1zYT+TerBm0alo3AOy1nLMKRNQtkmw2ecEKxWoqHCGM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu-HU\Microsoft.Lync.Controls.Framework.resources.dll" size="14016">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="hu-HU" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fJihha7YWsSHl4Lgzx6yFimwBt1KCzYgzhcbArXPx7U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id-ID\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="id-ID" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6MEHxgpRqgw9orAxrYFyT119Psq94fEGJFzr91kGkp4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it-IT\Microsoft.Lync.Controls.Framework.resources.dll" size="13512">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="it-IT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zhRTRsskGU+7PMTD4WD/yXxg3nO+Rochjw6LdHokoow=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja-JP\Microsoft.Lync.Controls.Framework.resources.dll" size="13992">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ja-JP" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HQXcdtPE14xh+dDlZ6obdjTmy89KcLPbMZqU7QZpSyU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="kk-KZ\Microsoft.Lync.Controls.Framework.resources.dll" size="14504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="kk-KZ" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XSVaxY4XKLkTiAntwPVz5tcph0BEXj8cOAsf9OUJMUM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\Microsoft.Lync.Controls.Framework.resources.dll" size="13992">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bRfwHlNw68ZrKEL6YWpM4tE7wX6hhjICy6JetHQIZTY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="lt-LT\Microsoft.Lync.Controls.Framework.resources.dll" size="14024">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="lt-LT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3PEKUOAUIfZwV9JaNMT188J9uKNfkHxXt6KlX+skXnM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="lv-LV\Microsoft.Lync.Controls.Framework.resources.dll" size="14024">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="lv-LV" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TuI8DfA3TunNV5i4RjUnbrm0O2OqdUspSSXVSNopNWI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="mk-MK\Microsoft.Lync.Controls.Framework.resources.dll" size="14504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="mk-MK" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5xffWupvV+3CJzdmNZ1ZGpjiU6d3bqG35igHvYuK4Wk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ms-MY\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ms-MY" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>e4m0JE5F8RZQ0GBGd+R2w8Hr9cHpjiHysVBaQR/szNU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nb-NO\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="nb-NO" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CuAT2bUg8TEB6zdxyOXXVPadqM42j6ahNQRbtSd42ok=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\Microsoft.Lync.Controls.Framework.resources.dll" size="13448">
+      <assemblyIdentity name="Microsoft.Lync.Controls.Framework.Resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>52hoxjTfN0cyExad/JZy+liEqVnqDnC0AieRctMYBSo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl-NL\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="nl-NL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>0h4ZS7J3rBGuVCrYoYtdODSOH5jBLQtmnxWyr2B+2B4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pl-PL\Microsoft.Lync.Controls.Framework.resources.dll" size="14032">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="pl-PL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>R23ttydG9Vbh3feldT2zdnOrZ3F8fcFUNpV+q+FOgjw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\Microsoft.Lync.Controls.Framework.resources.dll" size="13512">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Eq+fiTbrDyMX7V2VLjfHVaQmBqyX2Q3+9DiSp32Es6A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-PT\Microsoft.Lync.Controls.Framework.resources.dll" size="13512">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="pt-PT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fDuG8APsCpDRIrR8bHq3MXsIiUFwFKeJ55ozZlShyE4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ro-RO\Microsoft.Lync.Controls.Framework.resources.dll" size="13512">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ro-RO" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IfT4ZKwl8N/5YHDXUGwXBPe8fEyfgJbNeRBCbQA9cfU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru-RU\Microsoft.Lync.Controls.Framework.resources.dll" size="14504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ru-RU" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rxPy8qWaow79eg5GNbxZ03s2JRfvEbtBo4PT3qWe8dM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sk-SK\Microsoft.Lync.Controls.Framework.resources.dll" size="13512">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sk-SK" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kr1NrnYzyAMOUSallqc/rc+aEGlmVWkdQ6M4yc6k5bw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sl-SI\Microsoft.Lync.Controls.Framework.resources.dll" size="13528">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sl-SI" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gq9sqFJxcOmnZcOkOEcNZl7pk5Q+SQUxSknoh5hDvs8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sq-AL\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sq-AL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>luhf68B0HRae1ynM1+qr/0rLd/LQ1QrVmJA7dfkSGvc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sr-Cyrl-CS\Microsoft.Lync.Controls.Framework.resources.dll" size="14504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sr-Cyrl-CS" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ESN6fj+FAYPW804XtvvE9+4lb22F7fjRBvbMSCmoAlo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sr-Latn-CS\Microsoft.Lync.Controls.Framework.resources.dll" size="13528">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sr-Latn-CS" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mgt+NbZy4pZDdgJQ68Ym4eP9cPIdIgMdCPKRdM2ho4s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sv-SE\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sv-SE" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1f+WX065hbwIyu6+aR4xG4vBbHyAIut0h3xjZqNRbQY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="th-TH\Microsoft.Lync.Controls.Framework.resources.dll" size="15016">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="th-TH" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kywNBdEUdyC3Hr2FvHcN2OoFi19VcuIO6UJ1YKKfsnw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr-TR\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="tr-TR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Gk2ileep/2kgSlnD5QMUrDwqY7u7YJgsAi/YYGOH16Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk-UA\Microsoft.Lync.Controls.Framework.resources.dll" size="14504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="uk-UA" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DVU/DyOMXRRM/xlx+I1mxcs9F63Zu3fGXWQ/2bn28CI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uz-Latn-UZ\Microsoft.Lync.Controls.Framework.resources.dll" size="13504">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="uz-Latn-UZ" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z8KCjrVBs5U7QZ/z/wIKxdozP11Dkjos7f14e1he9es=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\Microsoft.Lync.Controls.Framework.resources.dll" size="13992">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="vi-VN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K998wsgcfRZcHIp8lCwueFdHykqFX+mVMlQj8YhdUSY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\Microsoft.Lync.Controls.Framework.resources.dll" size="13480">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QM2s6vMoxpTsoAytbvCs+RiCjWh+WmrqpsRd46P9mHA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\Microsoft.Lync.Controls.Framework.resources.dll" size="13480">
+      <assemblyIdentity name="microsoft.lync.controls.framework.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bOp2BEbhRrSFy40y/XFHmBbnXYNXEUqbEDWBu1N954I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="az-Latn-AZ\Microsoft.Lync.Controls.resources.dll" size="33480">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="az-Latn-AZ" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2JVaooJhqKxrm8qA7cACj16QxLQDLNO+s1xpN8nmUY0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="be-BY\Microsoft.Lync.Controls.resources.dll" size="39080">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="be-BY" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>I6VJi5ARHq8YromJRWLXlDBjZPbiVKweOygamhudARk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bg-BG\Microsoft.Lync.Controls.resources.dll" size="38568">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="bg-BG" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3vxMqGOhlOU6+cxk42MbI67bj6AvaUbqA832+ZHYLW0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ca-ES\Microsoft.Lync.Controls.resources.dll" size="33480">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ca-ES" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oPe8jebUrcZqSD5zjpahCUx5qjrZv4ofG5J/MsfxawU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="cs-CZ\Microsoft.Lync.Controls.resources.dll" size="32960">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="cs-CZ" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+ZFJFUdOdEfXxclS24p0mzTpGhxfn0EOqJcmB3pY0b0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="da-DK\Microsoft.Lync.Controls.resources.dll" size="32448">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="da-DK" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K8CoOFkHZ9UzxKF3cYwl4srHZO/SoFh6mJIZZfsXC8s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de-DE\Microsoft.Lync.Controls.resources.dll" size="33472">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="de-DE" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DHLk8yOQx6+Y4TxLcAliAoYUKf2IZsTaQD30mHx0fCE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="el-GR\Microsoft.Lync.Controls.resources.dll" size="40616">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="el-GR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZUxAPianlMXS4Z9kSIHwWo6BMJdeO0fp2o9vnwi6HIw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-ES\Microsoft.Lync.Controls.resources.dll" size="33480">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="es-ES" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RRO/6yCa2WCj+nbZnvRt8qOPPFwacDwLv1fDB6l3QXQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="et-EE\Microsoft.Lync.Controls.resources.dll" size="31936">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="et-EE" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LfVSd9PVQN8vi7oxbRFIlKM+x29/Z6EWL7gi3TgXbJU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="eu-ES\Microsoft.Lync.Controls.resources.dll" size="32960">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="eu-ES" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eJbr5LXSc/nFo+1wHCpS8qT5iHv0eVEIagKqDO1IBTQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fi-FI\Microsoft.Lync.Controls.resources.dll" size="32952">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="fi-FI" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7Hbb/lW6PdoJ+3lSQnibPxdufrDn0MeOefMA826yTGA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fil-PH\Microsoft.Lync.Controls.resources.dll" size="33984">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="fil-PH" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>l1qj5RJoRcccdccw0SxjECst703gYbzZcZb/JtPIwpk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr-FR\Microsoft.Lync.Controls.resources.dll" size="33984">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="fr-FR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7vOtI2YD/oUBjxfxuUUIdNVWqOaop7Dg1783BdFG4Q0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gl-ES\Microsoft.Lync.Controls.resources.dll" size="33480">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="gl-ES" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XXTQRJVHw2XjqaApkc6al5jneHIsNLJiYX83kOfoz54=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hi-IN\Microsoft.Lync.Controls.resources.dll" size="42152">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="hi-IN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KTL4vWt0tvxkEBovAXqFYnIOIVwdLdqLU7Es+xzdPjg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hr-HR\Microsoft.Lync.Controls.resources.dll" size="32472">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="hr-HR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CjwcU8pB6/jzW50mbicfpMjZOBRxhKelSWjTn2oagEs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu-HU\Microsoft.Lync.Controls.resources.dll" size="33472">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="hu-HU" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YkBN3hmATKrl+tB0LYIwcV2ESheOt19EmMvD68p1a8M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id-ID\Microsoft.Lync.Controls.resources.dll" size="31936">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="id-ID" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KdRrzLP6TthqQImD9XbI83GzDj84mm7tMzddOtr5uYE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it-IT\Microsoft.Lync.Controls.resources.dll" size="33992">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="it-IT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EvivC/IVH15+eDxAnz3ogaZUqOe1NKX2P/JU0i8DNXY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja-JP\Microsoft.Lync.Controls.resources.dll" size="34984">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ja-JP" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ESRfegD1oFk8t9LmAKBxKQJtEU2DljqG4uZbuOOq84g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="kk-KZ\Microsoft.Lync.Controls.resources.dll" size="39080">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="kk-KZ" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZADLorGasGDHX2siZXrkysc0rcNlv2UMSNsxKzD9X/g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\Microsoft.Lync.Controls.resources.dll" size="33960">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>24rqgbOWn4tTtXBJnelyng+ZO4JLwp5R4ojr88mGyCM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="lt-LT\Microsoft.Lync.Controls.resources.dll" size="33480">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="lt-LT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3xw+6kFs2vgbW1598gQYtyst0sdLl48UFDRsYjz7clI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="lv-LV\Microsoft.Lync.Controls.resources.dll" size="33480">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="lv-LV" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9KukqIMXodYCD0XEFq/xGbkHkXkgicuXLWX+q9YW9cw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="mk-MK\Microsoft.Lync.Controls.resources.dll" size="38056">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="mk-MK" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bBXO/YxykYBW9NwE1jiPzxNW5S5c6VgOMLDF7d4evmw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ms-MY\Microsoft.Lync.Controls.resources.dll" size="32448">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ms-MY" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mjq5mThDPJ+yjCPaWdQVC+7Wl47eGFGMeZTwmydJv+g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nb-NO\Microsoft.Lync.Controls.resources.dll" size="31936">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="nb-NO" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8qwLZsbb2Hn7BURGBOYVAYz1uSYgpPIesvy6+V3ZBFU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\Microsoft.Lync.Controls.resources.dll" size="31368">
+      <assemblyIdentity name="Microsoft.Lync.Controls.Resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yVvULL0yf4d+8Hz/XAxXDgvJQjQqLAMQNT/nOi4f72Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl-NL\Microsoft.Lync.Controls.resources.dll" size="32960">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="nl-NL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EvGqjVEEFVaoMNlp+EdfS+/XGAOBY8B6Rirowoni6JU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pl-PL\Microsoft.Lync.Controls.resources.dll" size="33488">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="pl-PL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9UpIhBp29DVz/9FCg3hbO+wXHwQz05H4yA6AiQHCVX4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\Microsoft.Lync.Controls.resources.dll" size="32968">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>T9LWEjRtm60cMcPU9FsT8ueCnliFk1RPk1r4YZkoDg8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-PT\Microsoft.Lync.Controls.resources.dll" size="33480">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="pt-PT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6r62RyppMQwBYxRZcIC6NNlayTzq8TPkblTFWmbk6pU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ro-RO\Microsoft.Lync.Controls.resources.dll" size="33992">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ro-RO" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ije5r7Pc2LswLTfN/EpVWsAkKh5kc1s2CxAIt3pm9GY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru-RU\Microsoft.Lync.Controls.resources.dll" size="39080">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="ru-RU" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yZo8DzQOF/LfTEe9rTmiAyOw46oPq2Db9CyCauMKt3I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sk-SK\Microsoft.Lync.Controls.resources.dll" size="33480">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sk-SK" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dbhVeVZ842H/ySEWUS9Xd57E5l2Tv4exZ37NWizhijY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sl-SI\Microsoft.Lync.Controls.resources.dll" size="32472">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sl-SI" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YiR4uHDi0SAJzTLUBdHJvooJE6sbiKUCJIliSugt+mo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sq-AL\Microsoft.Lync.Controls.resources.dll" size="33472">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sq-AL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TTfLjayLWGhO3Gkx7JiLAPtYoGEKiFxqY4fUBr51iF0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sr-Cyrl-CS\Microsoft.Lync.Controls.resources.dll" size="38056">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sr-Cyrl-CS" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>l76dbMhz/7+ZpGuMJr10BE3U0aCx4SqtAkzUXmig+Vo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sr-Latn-CS\Microsoft.Lync.Controls.resources.dll" size="32472">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sr-Latn-CS" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3tsW2K/RVdxTcbuTfHsnW9a838bHGibnWEsxzNPib6g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sv-SE\Microsoft.Lync.Controls.resources.dll" size="32448">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="sv-SE" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>awsBBMuS5XYM00oFEVsfvbJxEwSTYExE5wooUvv7k0A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="th-TH\Microsoft.Lync.Controls.resources.dll" size="42664">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="th-TH" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PyIUuYBQ0YiYUMtmBWef2ti9Ep4jx7c8hDa1T/OTrgM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr-TR\Microsoft.Lync.Controls.resources.dll" size="32960">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="tr-TR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NkmgNHoWPrnGUY5AJL8FjJMgk6+Ae4K3b3Hund0HOLo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk-UA\Microsoft.Lync.Controls.resources.dll" size="39080">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="uk-UA" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ohI5ExljS3S7gnkgbOiGGaZLx2Vp2S2b3nvGGZk/8KM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uz-Latn-UZ\Microsoft.Lync.Controls.resources.dll" size="33472">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="uz-Latn-UZ" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VzQfYReiyEjrVr/qY+AoAUOeqIEYEp55xcIoRVDKrC0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\Microsoft.Lync.Controls.resources.dll" size="34984">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="vi-VN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1Ti0ky0q4OUS/WqOTCSrSBSHhYAe+I6j+3pwt5jYsds=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\Microsoft.Lync.Controls.resources.dll" size="31912">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>M4X69wxuePfyeiKOFhFSM3wdBN05hJxoKynrT8HImhM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\Microsoft.Lync.Controls.resources.dll" size="31912">
+      <assemblyIdentity name="microsoft.lync.controls.resources" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IiD6KeD/7PBenfEXSfeFm4Gb4ofSBDA0StM2Opo8NII=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Lync.Model.dll" size="413888">
+      <assemblyIdentity name="Microsoft.Lync.Model" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9m3Yech9XucVfQouh7e8m6PlZfZLWs4vC8kyKHu/5FM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Lync.Utilities.dll" size="98400">
+      <assemblyIdentity name="Microsoft.Lync.Utilities" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>G6Gyvf+S1XptblLD7fchfm0F0CH5WfKFUdWVlHN4r90=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Uc.dll" size="479400">
+      <assemblyIdentity name="Microsoft.Office.Uc" version="15.0.4603.1000" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mNAHN6Yf5nS4wkiBJdFogY/8ZS+F0vwNBMqqOYFI4uU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="presentiel.exe" size="37336">
+      <assemblyIdentity name="presentiel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lKynZMrRhUBUYwFTLw6IHjtRmPOFp0zvArSOw/BqsFw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="presentiel.exe.config" size="1842">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NCT/LaXMNAIXXjXFjXDFZ94R+T1y7PWuAUEkxCDeCB8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CPNV\Cyril.KALBFUSS" issuerKeyHash="1dd0bb42d5c96e326b82bf420aad5908f2f398ea" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+jpFHzW5iUfXDruz7TJXbAUlv15zTZvSMCS8u357TEc=</DigestValue></Reference></SignedInfo><SignatureValue>mqRe1nZHW+xwTsX0tyxonqMoLH8CTmBzvSnpSdRdH/zpXeM//sjuPHdg2btQEylH+8wE8TEvNmmX2CHRrxP8xU/2mM6SK30SfUzFa3QyGSrhvAdoGr9k64NcH2jWmm3U6DjRSzMrSQ7Tq6Y/2iLcNLVTAdT1n+al5c5lsVCq9WA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ss+zYB02ieUlzGkZcErfEHEks2KkM2uXAfa46mkbNC4Qhd0Cs/Ow7TBDwb/R6RMfUyENMTXuTtWY7e7/4aPI2d8T3zs3oxcjb2UGCahezTVRZZ57WsvhffBECPkXkcR9Al7aw8+RC5Q5ES0CbJJRPt6hzJdpqAqtY1xEfAX0idk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="474c7b7ebbbc2430d29b4d735ebf25056c5732edb3bb0ed74789b9351f453afa" Description="" Url=""><as:assemblyIdentity name="presentiel.exe" version="1.0.0.0" publicKeyToken="8a96e18ec4d7af93" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CPNV\Cyril.KALBFUSS</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3jczbCf80W7YwEJSN7QKnTy/P48G0aJizJfIRAuIRTc=</DigestValue></Reference></SignedInfo><SignatureValue>phPY6zGNpSkDR/FHIE6Zm8Lm7VZ4psN6KlgIzm2irHMAV6eu9zIT7AbJ3RW7hd6e4OlmpaGuzSX8C2wmSWXQ5pkPBaD7+1dN7SQgyU0k+0FCZuYdO+3H6HHhGgmzwkiO3GSjZ6CFjBYHWW1OQo4eZDwXFgRuLxekeFJox2zJsZs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ss+zYB02ieUlzGkZcErfEHEks2KkM2uXAfa46mkbNC4Qhd0Cs/Ow7TBDwb/R6RMfUyENMTXuTtWY7e7/4aPI2d8T3zs3oxcjb2UGCahezTVRZZ57WsvhffBECPkXkcR9Al7aw8+RC5Q5ES0CbJJRPt6hzJdpqAqtY1xEfAX0idk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQbSIwZkPPMJJIumn2UebJTTANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYAQwBQAE4AVgBcAEMAeQByAGkAbAAuAEsAQQBMAEIARgBVAFMAUzAeFw0xODA2MTIwOTUxNTdaFw0xOTA2MTIxNTUxNTdaMDExLzAtBgNVBAMeJgBDAFAATgBWAFwAQwB5AHIAaQBsAC4ASwBBAEwAQgBGAFUAUwBTMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyz7NgHTaJ5SXMaRlwSt8QcSSzYqQza5cB9rjqaRs0LhCF3QKz87DtMEPBv9HpEx9TIQ0xNe5O1Zjt7v/ho8jZ3xPfOzejFyNvZQYJqF7NNVFlnntay+F98EQI+ReRxH0CXtrDz5ELlDkRLQJsklE+3qHMl2moCq1jXER8BfSJ2QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAKqOUSpFf7vQWdAtUYZRbYUMfmfqtTDyRuKONbmvjPOwZMOHVjEsAH05952xiqOGsii8bgjIpCVBCgcgR1DpmCDykWPlDRArktY03HBRrnzJmvH+c3nzji2An6kgvTprGNJljmmw+Gxklkstj96ZjJ89GQRGb+XqHksFryubj6d+</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

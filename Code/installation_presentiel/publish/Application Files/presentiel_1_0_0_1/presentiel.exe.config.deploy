@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="presentiel.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="presentiel.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+    </startup>
+    <userSettings>
+        <presentiel.Properties.Settings>
+            <setting name="UsbCOM" serializeAs="String">
+                <value>3</value>
+            </setting>
+            <setting name="BluetoothCOM" serializeAs="String">
+                <value>5</value>
+            </setting>
+            <setting name="ComMode" serializeAs="String">
+                <value>False</value>
+            </setting>
+        </presentiel.Properties.Settings>
+    </userSettings>
+    <applicationSettings>
+        <presentiel.Properties.Settings>
+            <setting name="PingFreq" serializeAs="String">
+                <value>10</value>
+            </setting>
+        </presentiel.Properties.Settings>
+    </applicationSettings>
+</configuration>
